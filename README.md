@@ -1,7 +1,7 @@
 <h1 align="center">Where in the World? - Redam Project</h1>
 
 <p align="center">
-  <img src="screenshot.png" alt="Where in the World? Screenshot">
+  <img src="./public/screenshot.png" alt="Where in the World? Screenshot">
 </p>
 
 <p align="center">
