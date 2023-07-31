@@ -28,3 +28,13 @@
    ```bash
    git clone https://github.com/your-username/your-redam-project.git
    cd your-redam-project
+   
+2. **Install dependencies:**
+  ```bash
+   npm install
+
+3. **Run the development server:**
+  ```bash
+  npm run dev
+
+4. **Open your browser and visit http://localhost:3000 to view the application.**
