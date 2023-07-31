@@ -15,7 +15,7 @@ function Nav() {
   return (
     <>
       <div>
-        <div className="flex justify-between p-5 bg-[#ffffff] dark:bg-[#2b3743] dark:text-white shadow-xl">
+        <div className="flex justify-between p-5 bg-[#ffffff] dark:bg-[#2b3743] dark:text-white shadow-2xl">
           <span className=" capitalize font-bold ">where in the world ? </span>
           <button className="flex items-center  gap-1" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
           <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5"  viewBox="0 0 512 512">

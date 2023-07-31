@@ -24,10 +24,10 @@ function page ({params}:{params:{name:string}}) {
     return (
       <>
       <Nav/>
-      <div className="p-4 lg:p-10  min-h-screen bg-[#222e37]">
+      <div className="p-4 lg:p-10  min-h-screen bg-[#fafafa] dark:bg-[#222e37]">
   <a href="/">
-    <button className="flex items-center gap-2 bg-[#2b3641] px-4 py-1 rounded capitalize text-white font-thin">
-      <svg className="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <button className="flex items-center gap-2 bg-[#ffffff] dark:bg-[#2b3641] px-4 py-1 rounded shadow-md capitalize dark:text-white font-thin">
+      <svg className="w-4 h-4 dark:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
         <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="48" d="M244 400L100 256l144-144M120 256h292"/>
       </svg>
       Back
@@ -39,7 +39,7 @@ function page ({params}:{params:{name:string}}) {
         <div>
         <img className="w-96 h-auto" src={ele.flags.png} alt="" />
         </div>
-        <div className="text-white mt-4 lg:mt-0">
+        <div className="dark:text-white mt-4 lg:mt-0">
           <div className="font-bold text-2xl pb-4">{ele.name.common}</div>
           <div className="flex flex-col sm:flex-row gap-24">
             <div className="space-y-2">
@@ -60,7 +60,7 @@ function page ({params}:{params:{name:string}}) {
               <span className="font-semibold">Border Countries :</span>
               <div className="flex flex-wrap gap-2">
                 {ele.borders.map((border, borderKey) => (
-                  <div key={borderKey} className="bg-[#2b3641] px-4 py-1 rounded font-light">{border}</div>
+                  <div key={borderKey} className="bg-[#ffffff] dark:bg-[#2b3641] px-4 py-1 rounded font-light shadow-md">{border}</div>
                 ))}
               </div>
             </div>
