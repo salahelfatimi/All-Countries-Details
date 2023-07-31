@@ -13,10 +13,10 @@ export  interface data {
       [code: string]: {
         name: string;
         symbol: string;
-        // Add other currency properties here if needed
-      };
-      // Add other currencies here if needed
-    };    languages:{deu:string,fra:string,nld:string}
+        
+      }
+    }
+    languages:{[code:string]:string}
     borders:[string]
     
   }
