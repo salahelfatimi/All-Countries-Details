@@ -46,7 +46,7 @@ function page ({params}:{params:{name:string}}) {
           <div className="flex flex-col sm:flex-row gap-24">
             <div className="space-y-2">
               <div className="font-light"><span className="font-semibold">Native Name: </span>{ele.altSpellings[1]}</div>
-              <div className="font-light"><span className="font-semibold">Population: </span>{ele.population}</div>
+              <div className="font-light"><span className="font-semibold">Population: </span>{ele.population.toLocaleString()}</div>
               <div className="font-light"><span className="font-semibold">Region: </span>{ele.region}</div>
               <div className="font-light"><span className="font-semibold">Sub Region: </span>{ele.subregion}</div>
               <div className="font-light"><span className="font-semibold">Capital: </span>{ele.capital}</div>
