@@ -16,9 +16,6 @@ export function FilterRegion(regionData:data[]): data[]{
     return regions
 }
 
-// export function handleSearch (searchName:string): React.MouseEventHandler<HTMLDivElement>{
-//     if (searchName.trim()) {
-//         router.push(`/search/${encodeURIComponent(searchName.trim())}`);
-//     } 
-    
-// } 
+export function DarkMode(DarkMode?:boolean){
+   
+}

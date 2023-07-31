@@ -40,14 +40,14 @@ export default function Saction() {
   return (
     <>
     
-      <div className="min-h-screen bg-[#222e37] ">
+      <div className="min-h-screen bg-[#fafafa] dark:bg-[#222e37] ">
         <div className="sm:flex sm:justify-between sm:space-y-0 space-y-4 p-4">
           <div className="relative w-full">
             <input
               onChange={(event) => setSearchName(event.target.value)}
               type="text"
               placeholder="Search for a country..."
-              className="text-sm font-semibold font-mono w-full h-12 p-2 pl-10 sm:w-1/3 text-gray-400 bg-[#2b3641] rounded-sm shadow-xl"
+              className="text-sm font-semibold font-mono w-full h-12 p-2 pl-10 sm:w-1/3 dark:text-gray-400 bg-[#ffffff] dark:bg-[#2b3641] rounded-sm shadow-xl"
             />
       
             <svg
@@ -77,7 +77,7 @@ export default function Saction() {
             name=""
             id=""
             onChange={(event) => setSelectRegion(event.target.value)}
-            className="text-sm font-semibold font-mono bg-[#2b3641] text-gray-400 h-12 px-4 rounded shadow-xl"
+            className="text-sm font-semibold font-mono bg-[#ffffff] dark:bg-[#2b3641] dark:text-gray-400 h-12 px-4 rounded shadow-xl"
           >
             <option value="none">All Region</option>
             {FilterRegion(data).map((region, key) => (
@@ -95,7 +95,7 @@ export default function Saction() {
                 <div
                 
                  
-                  className=" bg-[#2b3641] pb-12 rounded-lg shadow-md"
+                  className=" bg-[#ffffff] dark:bg-[#2b3641] pb-12 rounded-lg shadow-md"
                 >
                  
                   <img
@@ -103,20 +103,20 @@ export default function Saction() {
                     alt=""
                     className="w-full h-40 object-cover  rounded-t-md"
                   />
-                  <div className="text-white font-bold capitalize my-5 pt-4 ml-4">
+                  <div className="dark:text-white font-bold capitalize my-5 pt-4 ml-4">
                     {ele.name.common}
                   </div>
-                  <div className="text-white ml-4">
+                  <div className="dark:text-white ml-4">
                     <span className=" font-semibold capitalize">
                       population:
                     </span>
                     {ele.population.toLocaleString()}
                   </div>
-                  <div className="text-white ml-4">
+                  <div className="dark:text-white ml-4">
                     <span className=" font-semibold capitalize">region: </span>
                     {ele.region}
                   </div>
-                  <div className="text-white ml-4">
+                  <div className="dark:text-white ml-4">
                     <span className=" font-semibold capitalize">capital: </span>
                     {ele.capital}
                   </div>
@@ -127,7 +127,7 @@ export default function Saction() {
             </div>
           ) : (
             <div className="flex justify-center items-center h-screen ">
-              <div className="text-center text-white">
+              <div className="text-center dark:text-white">
                 <h1 className="text-4xl font-bold mb-6">Oops!</h1>
                 <p className="text-xl font-semibold">No country found.</p>
                 <p className="text-lg font-semibold mt-4">

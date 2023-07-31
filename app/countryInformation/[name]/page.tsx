@@ -3,14 +3,12 @@ import { Nav } from "@/components";
 import { fetchNAme } from "@/utils";
 import { data } from "@/types";
 import { useEffect, useState } from "react";
-import { FindByName } from "@/function";
 
 function page ({params}:{params:{name:string}}) {
 
   const countruTablu: data[] = [];
 
   const [data, setData] = useState<data[]>(countruTablu);
-  const [countryDetails, setCountryDetails] = useState<data[]>(countruTablu);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,7 +20,7 @@ function page ({params}:{params:{name:string}}) {
   }, []);
 
   
-  console.log(data[0])
+ 
     return (
       <>
       <Nav/>
