@@ -19,6 +19,7 @@
 - [React](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [next-themes](https://github.com/pacocoursey/next-themes)
 
 ## Getting Started
@@ -46,7 +47,7 @@ Contributions are welcome! If you find any issues or have ideas for improvements
 This project is licensed under the MIT License.
 
 <p align="center">
-  Made with ❤️ by [Your Name](https://github.com/your-username)
+  Made with ❤️ by [Salaheddine Elfatimi](github.com/salahelfatimie)
 </p>
 ```
 In this README.md file, I've used HTML tags to center align the project title and the screenshot image. Additionally, I've added a "Made with ❤️" section to credit the project creator and provide a link to their GitHub profile.
