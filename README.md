@@ -49,10 +49,5 @@ This project is licensed under the MIT License.
 <p align="center">
   Made with ❤️ by [Salaheddine Elfatimi](github.com/salahelfatimie)
 </p>
-```
-In this README.md file, I've used HTML tags to center align the project title and the screenshot image. Additionally, I've added a "Made with ❤️" section to credit the project creator and provide a link to their GitHub profile.
 
-Again, remember to replace placeholders like your-username and your-redam-project with your actual GitHub username and project repository name.
-
-Feel free to further customize this README.md file as needed to best represent your Redam project!
    
