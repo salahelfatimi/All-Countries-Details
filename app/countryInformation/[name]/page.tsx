@@ -13,8 +13,15 @@ function page ({params}:{params:{name:string}}) {
   useEffect(() => {
     const fetchData = async () => {
       const allCountry = await fetchNAme(params.name);
+      
       setData(allCountry);
-    
+      if(allCountry.length>1){
+        const CurrentCountry=allCountry.find((ele:{name:{common:string}})=> ele.name.common.toLowerCase() === params.name.toLowerCase())
+        setData([CurrentCountry])
+      }else if(allCountry.length>0){
+        setData(allCountry);
+      }
+ 
     };
     fetchData();
   }, []);
@@ -25,7 +32,7 @@ function page ({params}:{params:{name:string}}) {
       <>
       <Nav/>
       <div className="p-4 lg:p-10  min-h-screen bg-[#fafafa] dark:bg-[#222e37]">
-  <a href="/">
+  <a href="../">
     <button className="flex items-center gap-2 bg-[#ffffff] dark:bg-[#2b3641] px-4 py-1 rounded shadow-md capitalize dark:text-white font-thin">
       <svg className="w-4 h-4 dark:text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
         <path fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="48" d="M244 400L100 256l144-144M120 256h292"/>
@@ -58,7 +65,7 @@ function page ({params}:{params:{name:string}}) {
           {ele.borders && (
             <div className="pt-4 sm:flex flex-row gap-2">
               <span className="font-semibold">Border Countries :</span>
-              <div className="flex flex-wrap gap-2">
+              <div className="grid grid-cols-3 text-center sm:grid-cols-5 gap-2">
                 {ele.borders.map((border, borderKey) => (
                   <div key={borderKey} className="bg-[#ffffff] dark:bg-[#2b3641] px-4 py-1 rounded font-light shadow-md">{border}</div>
                 ))}

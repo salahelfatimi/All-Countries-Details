@@ -2,6 +2,7 @@
 import { data } from "@/types";
 import React, { useState,useEffect } from "react";
 import { fetchCountry } from "@/utils";
+import Link from 'next/link'
 
 
 import {FindByName ,FindByRegion ,FilterRegion } from '@/function'
@@ -91,7 +92,7 @@ export default function Saction() {
           {country.length > 0 ? (
             <div className="grid  gap-16 grid-cols-1 sm:grid-cols-2  lg:grid-cols-4  p-4">
               {country.map((ele, key) => (
-                <a  key={key} href={`/countryInformation/${ele.name.common}`}>
+                <Link  key={key} href={`/countryInformation/${ele.name.common}`}>
                 <div
                 
                  
@@ -122,7 +123,7 @@ export default function Saction() {
                   </div>
                
                 </div>
-                </a>
+                </Link>
               ))}
             </div>
           ) : (

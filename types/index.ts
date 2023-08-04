@@ -19,4 +19,5 @@ export  interface data {
     languages:{[code:string]:string}
     borders:[string]
     
+    
   }
