@@ -19,6 +19,7 @@
 - [React](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
 - [next-themes](https://github.com/pacocoursey/next-themes)
 
 ## Getting Started
@@ -28,3 +29,25 @@
    ```bash
    git clone https://github.com/your-username/your-redam-project.git
    cd your-redam-project
+   
+2. **Install dependencies:**
+    ```bash
+    npm install
+
+3. **Run the development server:**
+    ```bash
+    npm run dev
+
+4. **Open your browser and visit http://localhost:3000 to view the application.**
+
+<h1>Contributing</h1>
+Contributions are welcome! If you find any issues or have ideas for improvements, please feel free to open an issue or submit a pull request.
+
+<h1>License</h1>
+This project is licensed under the MIT License.
+
+<p align="center">
+  Made with ❤️ by [Salaheddine Elfatimi](github.com/salahelfatimie)
+</p>
+
+   
