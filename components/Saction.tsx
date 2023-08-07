@@ -92,7 +92,7 @@ export default function Saction() {
           {country.length > 0 ? (
             <div className="grid  gap-16 grid-cols-1 sm:grid-cols-2  lg:grid-cols-4  p-4">
               {country.map((ele, key) => (
-                <Link  key={key} href={`/countryInformation/${ele.name.common}`}>
+                <Link  key={key} href={`/${ele.name.common}`}>
                 <div
                 
                  
