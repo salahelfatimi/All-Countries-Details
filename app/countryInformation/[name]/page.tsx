@@ -4,7 +4,7 @@ import { fetchNAme } from "@/utils";
 import { data } from "@/types";
 import { useEffect, useState } from "react";
 
-function page ({params}:{params:{name:string}}) {
+function Page ({params}:{params:{name:string}}) {
 
   const countruTablu: data[] = [];
 
@@ -82,5 +82,5 @@ function page ({params}:{params:{name:string}}) {
     );
   };
   
-  export default page;
+  export default Page;
   
