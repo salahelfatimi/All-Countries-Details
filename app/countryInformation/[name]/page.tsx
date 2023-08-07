@@ -3,7 +3,7 @@ import { Nav } from "@/components";
 import { fetchNAme } from "@/utils";
 import { data } from "@/types";
 import { useEffect, useState } from "react";
-
+import  Image from "next/image"; 
 function Page ({params}:{params:{name:string}}) {
 
   const countruTablu: data[] = [];
@@ -44,7 +44,13 @@ function Page ({params}:{params:{name:string}}) {
     {data.map((ele, key) => (
       <div key={key} className="flex flex-col lg:flex-row justify-evenly mt-8 lg:mt-12">
         <div>
-        <img className="w-96 h-auto" src={ele.flags.png} alt="" />
+        <Image
+                  className="w-96 h-auto"
+                  src={ele.flags.png}
+                  alt=""
+                  width={250}
+                  height={200}
+                />
         </div>
         <div className="dark:text-white mt-4 lg:mt-0">
           <div className="font-bold text-2xl pb-4">{ele.name.common}</div>
